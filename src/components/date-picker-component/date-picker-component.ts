@@ -16,10 +16,10 @@ const HTML_CODE = `
 
         <span slot="end" *ngIf="hasPrevious() || hasNext()">
             <ion-button  fill="clear" [disabled]="!hasPrevious()" (click)="previous()">
-                <ion-icon slot="icon-only" name="ios-arrow-back"></ion-icon>
+                <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
             </ion-button>
             <ion-button fill="clear" [disabled]="!hasNext()" (click)="next()">
-                <ion-icon slot="icon-only" name="ios-arrow-forward"></ion-icon>
+                <ion-icon slot="icon-only" name="arrow-forward"></ion-icon>
             </ion-button>
         </span>
     </ion-item>
