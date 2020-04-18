@@ -59,14 +59,14 @@ const HTML_CODE = `
             <ion-col size="10" text-center>
                     <div *ngIf="hasPreviousYears() || hasNextYears()">
                         <ion-button fill="clear" [disabled]="!hasPreviousYears()"  (click)="showPreviousYears()">
-                            <ion-icon slot="icon-only" name="ios-arrow-back"></ion-icon>
+                            <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
                         </ion-button>
                         <ion-button fill="clear" [disabled]="true" class="year-range">
                             {{startYear}} to {{endYear}}
                         </ion-button>
                     
                         <ion-button fill="clear" [disabled]="!hasNextYears()" (click)="showNextYears()">
-                            <ion-icon slot="icon-only" name="ios-arrow-forward"></ion-icon>
+                            <ion-icon slot="icon-only" name="chevron-forward"></ion-icon>
                         </ion-button>
                     </div>
             </ion-col>
