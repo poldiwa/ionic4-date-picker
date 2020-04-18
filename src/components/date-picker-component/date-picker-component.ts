@@ -133,14 +133,14 @@ export class DatePickerComponent implements OnInit {
   @Input() validDates: Date[] = [];
   @Input() dateStyles: any = {};
 
-  @Input() backgroundStyle = { 'background-color': '#ffffff' };
-  @Input() notInCalendarStyle = { 'color': '#8b8b8b' };
+  @Input() backgroundStyle = { 'background-color': 'var(--ion-color-light)' };
+  @Input() notInCalendarStyle = { 'color': 'var(--ion-color-medium)' };
   @Input() dayLabelsStyle = { 'font-weight': 500, 'font-size': '14px' };
   @Input() monthLabelsStyle = {  'font-size': '15px' };
   @Input() yearLabelsStyle = {  'font-size': '15px' };
-  @Input() itemSelectedStyle = { 'background': '#488aff', 'color': '#f4f4f4 !important' };
-  @Input() invalidDateStyle = { 'text-decoration': 'line-through', 'color': 'red' };
-  @Input() todaysItemStyle = { 'color': '#32db64' };
+  @Input() itemSelectedStyle = { 'background': 'var(--ion-color-primary)', 'color': 'var(--ion-color-light) !important' };
+  @Input() invalidDateStyle = { 'text-decoration': 'line-through', 'color': 'var(--ion-color-danger)' };
+  @Input() todaysItemStyle = { 'color': 'var(--ion-color-secondary)' };
 
   @Output() onSelect: EventEmitter<Date> = new EventEmitter();
 
