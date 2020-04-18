@@ -31,7 +31,7 @@ const HTML_CODE = `
             </ion-col>
         </ion-row>
         <ion-row *ngFor="let week of weeks">
-            <ion-col *ngFor="let day of week" (click)="selectDay(day)" [ngStyle]="getDayStyle(day)" [class.active]="isToday(day.dayOfMonth)" text-center>
+            <ion-col *ngFor="let day of week" (click)="selectDay(day)" [ngStyle]="getDayStyle(day)" [class.today]="isToday(day.dayOfMonth)" [class.active]="daySelected==day" text-center>
                 <span [ngStyle]="!day.inCalendar && notInCalendarStyle">
                    <span [ngStyle]="isValidDay(day) && !isOneOfTheValidDates(day) && invalidDateStyle">{{isValidDay(day) ? day.dayOfMonth : '&nbsp;&nbsp;'}}</span>
                 </span>
